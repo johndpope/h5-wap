@@ -2,11 +2,11 @@
   <six-x-scroll :tabItems="tabItems" @changeConIndex="changeConIndex">
     <scroll class="scroll-wrap" ref="scroll" :data="lianweiNumBalls">
       <table class="numball-wrap">
-        <th class="lianwei-table-head">
+        <tr class="lianwei-table-head">
           <td>尾数</td>
           <td>赔率</td>
           <td>号码</td>
-        </th>
+        </tr>
         <tr v-for="(item, index) in lianweiNumBalls[conIndex]" :key="index" class="lianxiao-table-tr needsclick" :class="{'ballChoosing':item.bool}" @click="selectBallnums(item, index, $event, tabItems[conIndex], submitType, lianweigID, lianweiNumBalls[conIndex])">
           <td>{{item.ballNames}}</td>
           <td>{{item.odds}}</td>
