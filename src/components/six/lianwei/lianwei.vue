@@ -5,7 +5,7 @@
         <tr class="lianwei-table-head">
           <td>尾数</td>
           <td>赔率</td>
-          <td>号码</td
+          <td>号码</td>
         </tr>
         <tr v-for="(item, index) in lianweiNumBalls[conIndex]" :key="index" class="lianxiao-table-tr needsclick" :class="{'ballChoosing':item.bool}" @click="selectBallnums(item, index, $event, tabItems[conIndex], submitType, lianweigID, lianweiNumBalls[conIndex])">
           <td>{{item.ballNames}}</td>
