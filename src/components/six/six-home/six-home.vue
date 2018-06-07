@@ -56,24 +56,24 @@
                   <span class="issue">{{item.period}}</span>
                   <div class="six-ball-wrap">
                     <div class="prize clearfix">
-                      <span class="ball" v-for="(numA, indexA) in item.result" v-if="indexA < 6" :class="numA | filterSixBsColor">{{numA}}</span>
+                      <span class="ball" v-for-key="(numA, indexA) in item.result" v-if="indexA < 6" :class="numA | filterSixBsColor">{{numA}}</span>
                       <span class="add">+</span>
-                      <span class="ball" v-for="(numA, indexA) in item.result" v-if="indexA === 6" :class="numA | filterSixBsColor">{{numA}}</span>
+                      <span class="ball" v-for-key="(numA, indexA) in item.result" v-if="indexA === 6" :class="numA | filterSixBsColor">{{numA}}</span>
                     </div>
                     <div class="prize clearfix">
-                      <span class="num-dxds" :class="numA | filterDxColor(25)" v-for="(numA, indexA) in item.result" v-if="indexA < 6">{{numA | filterDx(25)}}</span>
+                      <span class="num-dxds" :class="numA | filterDxColor(25)" v-for-key="(numA, indexA) in item.result" v-if="indexA < 6">{{numA | filterDx(25)}}</span>
                       <span class="add">+</span>
-                      <span class="num-dxds" :class="numA | filterDxColor(25)" v-for="(numA, indexA) in item.result" v-if="indexA === 6">{{numA | filterDx(25)}}</span>
+                      <span class="num-dxds" :class="numA | filterDxColor(25)" v-for-key="(numA, indexA) in item.result" v-if="indexA === 6">{{numA | filterDx(25)}}</span>
                     </div>
                     <div class="prize clearfix">
-                      <span class="num-ds" v-for="(numA, indexA) in item.result" v-if="indexA < 6">{{numA | filterSixDsBs}}</span>
+                      <span class="num-ds" v-for-key="(numA, indexA) in item.result" v-if="indexA < 6">{{numA | filterSixDsBs}}</span>
                       <span class="add">+</span>
-                      <span class="num-ds" v-for="(numA, indexA) in item.result" v-if="indexA === 6">{{numA | filterSixDsBs}}</span>
+                      <span class="num-ds" v-for-key="(numA, indexA) in item.result" v-if="indexA === 6">{{numA | filterSixDsBs}}</span>
                     </div>
                     <div class="prize clearfix">
-                      <span class="num-dxds" v-for="(numA, indexA) in item.result" v-if="indexA < 6">{{numA | fllterSixSx}}</span>
+                      <span class="num-dxds" v-for-key="(numA, indexA) in item.result" v-if="indexA < 6">{{numA | fllterSixSx}}</span>
                       <span class="add">+</span>
-                      <span class="num-dxds" v-for="(numA, indexA) in item.result" v-if="indexA === 6">{{numA | fllterSixSx}}</span>
+                      <span class="num-dxds" v-for-key="(numA, indexA) in item.result" v-if="indexA === 6">{{numA | fllterSixSx}}</span>
                     </div>
                   </div>
                 </li>
